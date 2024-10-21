@@ -47,6 +47,11 @@
                 <span>Serverlist</span>
               </Link>
             </li>
+            <li class="border-none inline-block align-middle">
+              <a href="https://www.patreon.com/h1emu">
+                <span>Support us</span>
+              </a>
+            </li>
           </ul>
           <div
             class="ml-auto text-[0px] leading-[64px] uppercase font-['Tahoma',sans-serif] float-right"
