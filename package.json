@@ -1,28 +1,30 @@
 {
-  "name": "h1emu-com",
-  "version": "1.0.0",
+  "name": "h1emu-com-kentin",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "css-loader": "^7.1.2",
-    "html-webpack-plugin": "^5.6.2",
+    "@sveltejs/adapter-auto": "^3.2.5",
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "@tsconfig/svelte": "^5.0.4",
+    "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
-    "postcss-loader": "^8.1.1",
-    "postcss-preset-env": "^10.0.6",
-    "style-loader": "^4.0.0",
-    "tailwindcss": "^3.4.13",
-    "webpack": "^5.95.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.1.0"
+    "svelte": "^4.2.19",
+    "svelte-check": "^4.0.4",
+    "tailwindcss": "^3.4.14",
+    "tslib": "^2.7.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
   },
   "dependencies": {
-    "alpinejs": "^3.14.1"
+    "axios": "^1.7.7",
+    "svelte-routing": "^2.13.0",
+    "svelte-spa-router": "^4.0.1"
   }
 }
