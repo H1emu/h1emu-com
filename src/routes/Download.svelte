@@ -1,3 +1,7 @@
+<script>
+  import AuthKeyGenerator from "../AuthKeyGenerator.svelte";
+</script>
+
 <div class="relative">
   <img
     class="h-[520px] w-full object-cover"
@@ -13,6 +17,7 @@
     <h2 class="text-white text-3xl font-bold text-center">
       Experience H1Z1 Just Survive from 2016, just like before!
     </h2>
+    <AuthKeyGenerator />
     <a
       href="https://github.com/H1emu/h1emu-launcher/releases/latest/download/H1EmuLauncherSetup.exe"
       download
