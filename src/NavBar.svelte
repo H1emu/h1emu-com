@@ -11,29 +11,16 @@
   >
     <div class="flex flex-wrap relative">
       <div class="w-full">
-        <div class="float-right">
-          <button
-            type="button"
-            class="bg-transparent border border-white text-white inline-block font-['Tahoma',sans-serif] text-[18px] leading-[1] m-[15px_-5px_0_0] outline-none p-[6px_8px] uppercase md:hidden"
-            >Menu</button
-          >
-        </div>
-        <div class="inline-block my-1.25 md:hidden">
-          <a
-            href="index.html"
-            class="block h-[49px] w-[129px] bg-[url('h1emu_logo_white.png')] bg-contain bg-no-repeat bg-center transition-transform duration-200"
-          ></a>
-        </div>
         <div class="menu-list hidden md:block">
           <ul class="home-nav flex items-center space-x-4 float-left">
             <li class="border-none inline-block align-middle">
               <a
-                href="index.html"
+                href="/"
                 class="block h-[49px] w-[129px] bg-[url('h1emu_logo_white.png')] bg-contain bg-no-repeat bg-center transition-transform duration-200"
               ></a>
             </li>
             <li class="border-none inline-block align-middle active">
-              <a href="index.html">
+              <a href="/">
                 <span>Home</span>
               </a>
             </li>
