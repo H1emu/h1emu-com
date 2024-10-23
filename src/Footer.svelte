@@ -1,12 +1,23 @@
+<script lang="ts">
+  let count = 0;
+  function clickedH1emuLogo() {
+    count += 1;
+    if (count > 10) {
+      // DON'T ASK ABOUT THIS OR YOU'RE FIRED
+      window.open("https://quentingruber.github.io/h1z1-server-website/");
+    }
+  }
+</script>
+
 <footer class="bg-white dark:bg-gray-900">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
-        <a href="#" class="flex items-center">
+        <button on:click={clickedH1emuLogo} class="flex items-center">
           <span
             class="self-center block h-[49px] w-[129px] bg-[url('h1emu_logo_white.png')] bg-contain bg-no-repeat bg-center transition-transform duration-200"
           ></span>
-        </a>
+        </button>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
