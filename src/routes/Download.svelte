@@ -3,11 +3,7 @@
 </script>
 
 <div class="relative">
-  <img
-    class="h-[520px] w-full object-cover"
-    src="https://images.unsplash.com/photo-1680725779155-456faadefa26"
-    alt="Random image"
-  />
+  <img class="h-[520px] w-full object-cover" src="./bg1.jpg" />
   <div class="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
 
   <!-- Centering content and stacking text and button vertically -->
