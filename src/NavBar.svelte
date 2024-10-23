@@ -3,6 +3,8 @@
   import Home from "./routes/Home.svelte";
   import Download from "./routes/Download.svelte";
   import ServerList from "./routes/ServerList.svelte";
+  import HowToPlay from "./routes/HowToPlay.svelte";
+  import Authkey from "./routes/Authkey.svelte";
 </script>
 
 <Router>
@@ -14,15 +16,15 @@
         <div class="menu-list hidden md:block">
           <ul class="home-nav flex items-center space-x-4 float-left">
             <li class="border-none inline-block align-middle">
-              <a
-                href="/"
+              <Link
+                to="/"
                 class="block h-[49px] w-[129px] bg-[url('h1emu_logo_white.png')] bg-contain bg-no-repeat bg-center transition-transform duration-200"
-              ></a>
+              ></Link>
             </li>
             <li class="border-none inline-block align-middle active">
-              <a href="/">
+              <Link to="/">
                 <span>Home</span>
-              </a>
+              </Link>
             </li>
             <li class="border-none inline-block align-middle">
               <a href="https://github.com/QuentinGruber/h1z1-server/releases">
@@ -32,6 +34,11 @@
             <li class="border-none inline-block align-middle">
               <Link to="/serverlist">
                 <span>Serverlist</span>
+              </Link>
+            </li>
+            <li class="border-none inline-block align-middle">
+              <Link to="/howtoplay">
+                <span>How to play</span>
               </Link>
             </li>
             <li class="border-none inline-block align-middle">
@@ -61,4 +68,6 @@
   <Route path="/" component={Home} />
   <Route path="/serverlist" component={ServerList} />
   <Route path="/download" component={Download} />
+  <Route path="/howtoplay" component={HowToPlay} />
+  <Route path="/authkey" component={Authkey} />
 </Router>
