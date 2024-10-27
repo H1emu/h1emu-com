@@ -15,6 +15,7 @@
   updateServersData();
 </script>
 
+<img class="h-[200px] w-full object-cover" src="./bg1.jpg" />
 <table class="min-w-full divide-y divide-gray-200">
   <thead class="bg-gray-50">
     <tr>
