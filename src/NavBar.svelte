@@ -21,7 +21,7 @@
                 class="block h-[49px] w-[129px] bg-[url('h1emu_logo_white.png')] bg-contain bg-no-repeat bg-center transition-transform duration-200"
               ></Link>
             </li>
-            <li class="border-none inline-block align-middle active">
+            <li class="border-none inline-block align-middle">
               <Link to="/">
                 <span>Home</span>
               </Link>
