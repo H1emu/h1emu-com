@@ -19,11 +19,32 @@
       console.error(e);
     }
   }
+  function getStatus(server: any) {
+    if (server.locked) {
+      return "Locked";
+    } else {
+      if (server.allowedAccess) {
+        return "Up";
+      } else {
+        return "Down";
+      }
+    }
+  }
   updateServersData();
   setInterval(updateServersData, 5_000);
 </script>
 
 <div class="container mx-auto px-4 py-6">
+  <div
+    class="bg-gray-800 text-white p-4 rounded-lg shadow-md mb-6 inline-block mt-9"
+  >
+    <p>Total Servers: {totalServers}</p>
+  </div>
+  <div
+    class="bg-gray-800 text-white p-4 rounded-lg shadow-md mb-6 inline-block"
+  >
+    <p>Total Players: {totalPlayers}</p>
+  </div>
   <h2 class="text-2xl font-bold text-gray-200 mb-4">Official Servers</h2>
   <table
     class="min-w-full divide-y divide-gray-700 shadow-lg rounded-lg overflow-hidden"
@@ -52,7 +73,7 @@
       {#each officialServers as server}
         <tr class="hover:bg-gray-700 transition duration-200 ease-in-out">
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.name} ({server.region}) #{server.serverId}</td
+            >{server.name} ({server.region})</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.h1emuVersion}</td
@@ -61,11 +82,7 @@
             >{server.populationNumber}/{server.maxPopulationNumber}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.locked
-              ? "locked"
-              : server.allowedAccess
-                ? "Up"
-                : "Down"}</td
+            >{getStatus(server)}</td
           >
         </tr>
       {/each}
@@ -100,7 +117,7 @@
       {#each communityServers as server}
         <tr class="hover:bg-gray-700 transition duration-200 ease-in-out">
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.name} ({server.region}) #{server.serverId}</td
+            >{server.name} ({server.region})</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.h1emuVersion}</td
@@ -109,11 +126,7 @@
             >{server.populationNumber}/{server.maxPopulationNumber}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.locked
-              ? "locked"
-              : server.allowedAccess
-                ? "Up"
-                : "Down"}</td
+            >{getStatus(server)}</td
           >
         </tr>
       {/each}
