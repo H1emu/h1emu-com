@@ -16,97 +16,86 @@
   setInterval(updateServersData, 5_000);
 </script>
 
-<div class="container mt-9 mx-auto px-4 py-6">
-  <h2 class="text-2xl font-bold text-gray-800 mb-4">Official Servers</h2>
-  <table
-    class="min-w-full divide-y divide-gray-200 shadow-lg rounded-lg overflow-hidden"
-  >
-    <thead class="bg-gray-100">
+<img class="h-[200px] w-full object-cover" src="./bg1.jpg" />
+<div class="container mx-auto px-4 py-6">
+  <h2 class="text-2xl font-bold text-gray-200 mb-4">Official Servers</h2>
+  <table class="min-w-full divide-y divide-gray-700 shadow-lg rounded-lg overflow-hidden">
+    <thead class="bg-gray-800">
       <tr>
         <th
-          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-700 uppercase tracking-wider"
+          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
           >Server Name</th
         >
         <th
-          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-700 uppercase tracking-wider"
+          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
           >Population</th
         >
         <th
-          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-700 uppercase tracking-wider"
+          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
           >H1emu Version</th
         >
         <th
-          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-700 uppercase tracking-wider"
+          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
           >Status</th
         >
       </tr>
     </thead>
-    <tbody class="bg-white divide-y divide-gray-200">
+    <tbody class="bg-gray-900 divide-y divide-gray-700">
       {#each officialServers as server}
-        <tr class="hover:bg-gray-50 transition duration-200 ease-in-out">
-          <td class="px-6 py-4 whitespace-nowrap"
+        <tr class="hover:bg-gray-700 transition duration-200 ease-in-out">
+          <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.name} ({server.region}) #{server.serverId}</td
           >
-          <td class="px-6 py-4 whitespace-nowrap"
+          <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.populationNumber}/{server.maxPopulationNumber}</td
           >
-          <td class="px-6 py-4 whitespace-nowrap"
+          <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >h1z1-server {server.h1emuVersion}</td
           >
-          <td class="px-6 py-4 whitespace-nowrap"
-            >{server.locked
-              ? "locked"
-              : server.allowedAccess
-                ? "Up"
-                : "Down"}</td
+          <td class="px-6 py-4 whitespace-nowrap text-gray-200"
+            >{server.locked ? "locked" : server.allowedAccess ? "Up" : "Down"}</td
           >
         </tr>
       {/each}
     </tbody>
   </table>
 
-  <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Community Servers</h2>
-  <table
-    class="min-w-full divide-y divide-gray-200 shadow-lg rounded-lg overflow-hidden"
-  >
-    <thead class="bg-gray-100">
+  <h2 class="text-2xl font-bold text-gray-200 mt-8 mb-4">Community Servers</h2>
+  <table class="min-w-full divide-y divide-gray-700 shadow-lg rounded-lg overflow-hidden">
+    <thead class="bg-gray-800">
       <tr>
         <th
-          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-700 uppercase tracking-wider"
+          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
           >Server Name</th
         >
         <th
-          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-700 uppercase tracking-wider"
+          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
           >Population</th
         >
         <th
-          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-700 uppercase tracking-wider"
+          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
           >H1emu Version</th
         >
         <th
-          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-700 uppercase tracking-wider"
+          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
           >Status</th
         >
       </tr>
     </thead>
-    <tbody class="bg-white divide-y divide-gray-200">
+    <tbody class="bg-gray-900 divide-y divide-gray-700">
       {#each communityServers as server}
-        <tr class="hover:bg-gray-50 transition duration-200 ease-in-out">
-          <td class="px-6 py-4 whitespace-nowrap"
+        <tr class="hover:bg-gray-700 transition duration-200 ease-in-out">
+          <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.name} ({server.region}) #{server.serverId}</td
           >
-          <td class="px-6 py-4 whitespace-nowrap"
+          <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.populationNumber}/{server.maxPopulationNumber}</td
           >
-          <td class="px-6 py-4 whitespace-nowrap"
+          <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >h1z1-server {server.h1emuVersion}</td
           >
-          <td class="px-6 py-4 whitespace-nowrap"
-            >{server.locked
-              ? "locked"
-              : server.allowedAccess
-                ? "Up"
-                : "Down"}</td
+          <td class="px-6 py-4 whitespace-nowrap text-gray-200"
+            >{server.locked ? "locked" : server.allowedAccess ? "Up" : "Down"}</td
           >
         </tr>
       {/each}
