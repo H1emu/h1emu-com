@@ -2,10 +2,17 @@
   import axios from "axios";
   let officialServers: any[] = [];
   let communityServers: any[] = [];
+  let totalPlayers = 0;
+  let totalServers = 0;
   async function updateServersData() {
     try {
       let req = await axios.get("http://loginserver.h1emu.com/servers");
-      const serverData = req.data.filter((e: any) => !e.isDisabled);
+      const serverData: any[] = req.data.filter((e: any) => !e.isDisabled);
+      totalServers = serverData.length;
+      totalPlayers = 0;
+      serverData.forEach((server) => {
+        totalPlayers += server.populationNumber;
+      });
       officialServers = serverData.filter((e: any) => e.IsOfficial);
       communityServers = serverData.filter((e: any) => !e.IsOfficial);
     } catch (e) {
@@ -29,11 +36,11 @@
         >
         <th
           class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
-          >Population</th
+          >H1emu Version</th
         >
         <th
           class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
-          >H1emu Version</th
+          >Population</th
         >
         <th
           class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
@@ -48,10 +55,10 @@
             >{server.name} ({server.region}) #{server.serverId}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.populationNumber}/{server.maxPopulationNumber}</td
+            >{server.h1emuVersion}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >h1z1-server {server.h1emuVersion}</td
+            >{server.populationNumber}/{server.maxPopulationNumber}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.locked
@@ -77,11 +84,11 @@
         >
         <th
           class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
-          >Population</th
+          >H1emu Version</th
         >
         <th
           class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
-          >H1emu Version</th
+          >Population</th
         >
         <th
           class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
@@ -96,10 +103,10 @@
             >{server.name} ({server.region}) #{server.serverId}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.populationNumber}/{server.maxPopulationNumber}</td
+            >{server.h1emuVersion}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >h1z1-server {server.h1emuVersion}</td
+            >{server.populationNumber}/{server.maxPopulationNumber}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.locked
