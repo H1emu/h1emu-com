@@ -7,7 +7,7 @@
     <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
       Why we started
     </h5>
-    <p class="mb-3 font-normal text-gray-700 text-gray-400">
+    <p class="mb-3 font-normal text-gray-400">
       The motivation behind this project came from a simple statement: "It's
       just a matter of effort and enough interest from people to make private
       servers for the game." Many doubted that there was still a community for
@@ -17,7 +17,7 @@
     <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
       Special Thanks
     </h5>
-    <p class="mb-3 font-normal text-gray-700 text-gray-400">
+    <p class="mb-3 font-normal text-gray-400">
       This project wouldn't have been possible without the support and
       contributions of many talented individuals. A heartfelt thank you to:
     </p>
@@ -53,6 +53,17 @@
       <li class="text-gray-400">
         <strong>Jacob Seidelin:</strong> None of this would have been possible without
         your pioneering efforts.
+      </li>
+      <li class="text-gray-400">
+        <strong>Kentin:</strong> I don't know what to tell about myself.
+      </li>
+      <li class="text-gray-400">
+        <strong>Jason:</strong> You're a cool dude like really nice and cool and
+        nice.
+      </li>
+      <li class="text-gray-400">
+        Thanks to all those who sent messages of help and support and
+        perpetuated the hope of playing h1z1 again.
       </li>
     </ul>
   </div>
