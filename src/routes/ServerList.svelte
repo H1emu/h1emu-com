@@ -13,6 +13,7 @@
     }
   }
   updateServersData();
+  setInterval(updateServersData, 5_000);
 </script>
 
 <img class="h-[200px] w-full object-cover" src="./bg1.jpg" />
