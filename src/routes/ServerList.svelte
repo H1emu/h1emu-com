@@ -16,10 +16,11 @@
   setInterval(updateServersData, 5_000);
 </script>
 
-<img class="h-[200px] w-full object-cover" src="./bg1.jpg" />
-<div class="container mx-auto px-4 py-6">
+<div class="container mt-9 mx-auto px-4 py-6">
   <h2 class="text-2xl font-bold text-gray-800 mb-4">Official Servers</h2>
-  <table class="min-w-full divide-y divide-gray-200 shadow-lg rounded-lg overflow-hidden">
+  <table
+    class="min-w-full divide-y divide-gray-200 shadow-lg rounded-lg overflow-hidden"
+  >
     <thead class="bg-gray-100">
       <tr>
         <th
@@ -53,7 +54,11 @@
             >h1z1-server {server.h1emuVersion}</td
           >
           <td class="px-6 py-4 whitespace-nowrap"
-            >{server.locked ? "locked" : server.allowedAccess ? "Up" : "Down"}</td
+            >{server.locked
+              ? "locked"
+              : server.allowedAccess
+                ? "Up"
+                : "Down"}</td
           >
         </tr>
       {/each}
@@ -61,7 +66,9 @@
   </table>
 
   <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Community Servers</h2>
-  <table class="min-w-full divide-y divide-gray-200 shadow-lg rounded-lg overflow-hidden">
+  <table
+    class="min-w-full divide-y divide-gray-200 shadow-lg rounded-lg overflow-hidden"
+  >
     <thead class="bg-gray-100">
       <tr>
         <th
@@ -95,7 +102,11 @@
             >h1z1-server {server.h1emuVersion}</td
           >
           <td class="px-6 py-4 whitespace-nowrap"
-            >{server.locked ? "locked" : server.allowedAccess ? "Up" : "Down"}</td
+            >{server.locked
+              ? "locked"
+              : server.allowedAccess
+                ? "Up"
+                : "Down"}</td
           >
         </tr>
       {/each}

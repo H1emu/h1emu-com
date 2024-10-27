@@ -1,4 +1,3 @@
-<div class="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
 <div
   class="z-[100] mx-auto px-[15px] md:max-w-[750px] lg:max-w-[970px] xl:max-w-[1170px] p-8"
 >
