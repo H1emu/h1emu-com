@@ -32,9 +32,6 @@
                 >Github</a
               >
             </li>
-            <li>
-              <a href="#" class="hover:underline">Features</a>
-            </li>
           </ul>
         </div>
         <div>

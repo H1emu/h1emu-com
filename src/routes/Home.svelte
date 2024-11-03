@@ -2,7 +2,7 @@
   class="z-[100] mx-auto px-[15px] md:max-w-[750px] lg:max-w-[970px] xl:max-w-[1170px] p-8"
 >
   <div
-    class="full-w mt-9 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative"
+    class="full-w mt-20 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative"
   >
     <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
       Why we started

@@ -36,11 +36,11 @@
                 <span>Serverlist</span>
               </Link>
             </li>
-            <li class="border-none inline-block align-middle">
-              <Link to="/howtoplay">
-                <span>How to play</span>
-              </Link>
-            </li>
+            <!-- <li class="border-none inline-block align-middle"> -->
+            <!--   <Link to="/howtoplay"> -->
+            <!--     <span>How to play</span> -->
+            <!--   </Link> -->
+            <!-- </li> -->
             <li class="border-none inline-block align-middle">
               <a href="https://www.patreon.com/h1emu">
                 <span>Support us</span>
