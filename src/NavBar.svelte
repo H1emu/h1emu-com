@@ -42,6 +42,11 @@
             <!--   </Link> -->
             <!-- </li> -->
             <li class="border-none inline-block align-middle">
+              <a href="http://charts.h1emu.com">
+                <span>Charts</span>
+              </a>
+            </li>
+            <li class="border-none inline-block align-middle">
               <a href="https://www.patreon.com/h1emu">
                 <span>Support us</span>
               </a>
