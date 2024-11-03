@@ -21,12 +21,12 @@
   }
   function getStatus(server: any) {
     if (server.locked) {
-      return "Locked";
+      return "Locked 🔒";
     } else {
       if (server.allowedAccess) {
-        return "Up";
+        return "Online ✅";
       } else {
-        return "Down";
+        return "Offline ❌";
       }
     }
   }
