@@ -1,5 +1,6 @@
 <script lang="ts">
   import axios from "axios";
+  import { onDestroy } from "svelte";
   let officialServers: any[] = [];
   let communityServers: any[] = [];
   let totalPlayers = 0;
@@ -33,7 +34,10 @@
     }
   }
   updateServersData();
-  setInterval(updateServersData, 5_000);
+  const serverUpdateInterval = setInterval(updateServersData, 5_000);
+  onDestroy(() => {
+    clearInterval(serverUpdateInterval);
+  });
 </script>
 
 <div class="container mx-auto px-4 py-6">
@@ -144,7 +148,8 @@
     h2 {
       font-size: 1.5rem;
     }
-    th, td {
+    th,
+    td {
       font-size: 0.875rem;
       padding: 8px;
     }
