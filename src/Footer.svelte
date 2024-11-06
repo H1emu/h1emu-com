@@ -15,7 +15,7 @@
       <div class="mb-6 md:mb-0">
         <button on:click={clickedH1emuLogo} class="flex items-center">
           <span
-            class="self-center block h-[49px] w-[129px] bg-[url('h1emu_logo_white.png')] bg-contain bg-no-repeat bg-center transition-transform duration-200"
+            class="self-center block h-[49px] w-[129px] bg-[url('./h1emu_logo_white.png')] bg-contain bg-no-repeat bg-center transition-transform duration-200"
           ></span>
         </button>
       </div>
