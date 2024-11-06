@@ -5,7 +5,7 @@
   let totalPlayers = 0;
   let totalServers = 0;
   const protocol = window.location.protocol === "https:" ? "https" : "http";
-  const serverListUrl = `${protocol}://loginserver.h1emu.com/servers`;
+  const serverListUrl = `${protocol}://loginservercf.h1emu.com/servers`;
   async function updateServersData() {
     try {
       let req = await axios.get(serverListUrl);
