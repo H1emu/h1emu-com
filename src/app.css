@@ -61,3 +61,19 @@
     padding: 0 18px;
   }
 }
+
+/* Media queries to adjust font sizes and layout for smaller screens */
+@media (max-width: 600px) {
+  .nav ul.home-nav li a {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+}
+
+/* Styles for touch-friendly buttons and inputs */
+button, input[type="button"], input[type="submit"] {
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  touch-action: manipulation;
+}

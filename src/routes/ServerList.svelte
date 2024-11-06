@@ -135,3 +135,18 @@
     </tbody>
   </table>
 </div>
+
+<style>
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    th, td {
+      font-size: 0.875rem;
+      padding: 8px;
+    }
+  }
+</style>
