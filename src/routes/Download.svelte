@@ -9,11 +9,12 @@
     <h2 class="text-white text-3xl font-bold text-center">
       Experience H1Z1 Just Survive from 2016, just like before!
     </h2>
-    <a
-      href="https://discord.com/invite/RM6jNkj"
-      class="mt-4 bg-[#800080] text-white text-2xl p-4 transition-colors duration-300 ease-in-out hover:bg-white hover:text-[#800080]"
-    >
-      Join the Discord Community
+    <a href="https://discord.com/invite/RM6jNkj">
+      <button
+        class="mt-4 bg-[#800080] text-white text-2xl p-4 transition-colors duration-300 ease-in-out hover:bg-white hover:text-[#800080]"
+      >
+        Join the Discord Community
+      </button>
     </a>
 
     <a
