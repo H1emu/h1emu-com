@@ -4,7 +4,6 @@
   import Download from "./routes/Download.svelte";
   import ServerList from "./routes/ServerList.svelte";
   import HowToPlay from "./routes/HowToPlay.svelte";
-  import Authkey from "./routes/Authkey.svelte";
   let isMenuOpen = false;
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
@@ -72,10 +71,7 @@
           </div>
         </div>
         <div class="menu-list block md:hidden">
-          <button
-            class="text-white focus:outline-none"
-            on:click={toggleMenu}
-          >
+          <button class="text-white focus:outline-none" on:click={toggleMenu}>
             <svg
               class="w-6 h-6"
               fill="none"
@@ -147,6 +143,5 @@
   <Route path="/serverlist" component={ServerList} />
   <Route path="/download" component={Download} />
   <Route path="/howtoplay" component={HowToPlay} />
-  <Route path="/authkey" component={Authkey} />
   <Route path="*" component={Home} />
 </Router>
