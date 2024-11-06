@@ -32,6 +32,12 @@
                 >Github</a
               >
             </li>
+            <li class="mb-4">
+              <a
+                href="https://github.com/H1emu/h1emu-com"
+                class="hover:underline">Website Source Code</a
+              >
+            </li>
           </ul>
         </div>
         <div>
