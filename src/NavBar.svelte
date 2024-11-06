@@ -33,7 +33,7 @@
             </li>
             <li class="border-none inline-block align-middle">
               <Link to="/serverlist">
-                <span>Serverlist</span>
+                <span>Servers</span>
               </Link>
             </li>
             <!-- <li class="border-none inline-block align-middle"> -->
@@ -70,9 +70,9 @@
       </div>
     </div>
   </nav>
-  <Route path="/" component={Home} />
   <Route path="/serverlist" component={ServerList} />
   <Route path="/download" component={Download} />
   <Route path="/howtoplay" component={HowToPlay} />
   <Route path="/authkey" component={Authkey} />
+  <Route path="*" component={Home} />
 </Router>
