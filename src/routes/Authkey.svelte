@@ -22,3 +22,17 @@
     </p>
   </div>
 </div>
+
+<style>
+  @media (max-width: 600px) {
+    .relative {
+      padding: 10px;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.875rem;
+    }
+  }
+</style>

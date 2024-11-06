@@ -85,3 +85,23 @@
     </div>
   </div>
 </div>
+
+<style>
+  @media (max-width: 600px) {
+    .relative {
+      padding: 10px;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.875rem;
+    }
+    ul {
+      padding-left: 1rem;
+    }
+    li {
+      font-size: 0.875rem;
+    }
+  }
+</style>

@@ -1,0 +1,475 @@
+/* Mobile-specific adjustments for font sizes and layout changes */
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .nav ul.home-nav li a {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .relative {
+    padding: 10px;
+  }
+
+  .full-w {
+    padding: 10px;
+  }
+
+  .page-section {
+    padding: 10px;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .grid-cols-1 {
+    display: block;
+  }
+
+  .grid-cols-12 {
+    display: block;
+  }
+
+  .col-span-5,
+  .col-span-7 {
+    width: 100%;
+  }
+
+  .space-y-4 {
+    margin-bottom: 10px;
+  }
+
+  .space-x-4 {
+    margin-right: 10px;
+  }
+
+  .space-y-2 {
+    margin-bottom: 5px;
+  }
+
+  .space-x-2 {
+    margin-right: 5px;
+  }
+
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+
+  .text-5xl {
+    font-size: 3rem;
+  }
+
+  .text-6xl {
+    font-size: 3.75rem;
+  }
+
+  .text-7xl {
+    font-size: 4.5rem;
+  }
+
+  .text-8xl {
+    font-size: 6rem;
+  }
+
+  .text-9xl {
+    font-size: 8rem;
+  }
+
+  .text-xl {
+    font-size: 1.25rem;
+  }
+
+  .text-lg {
+    font-size: 1.125rem;
+  }
+
+  .text-base {
+    font-size: 1rem;
+  }
+
+  .text-sm {
+    font-size: 0.875rem;
+  }
+
+  .text-xs {
+    font-size: 0.75rem;
+  }
+
+  .text-xxs {
+    font-size: 0.625rem;
+  }
+
+  .text-xxxs {
+    font-size: 0.5rem;
+  }
+
+  .text-xxxxs {
+    font-size: 0.375rem;
+  }
+
+  .text-xxxxxs {
+    font-size: 0.25rem;
+  }
+
+  .text-xxxxxxs {
+    font-size: 0.125rem;
+  }
+
+  .text-xxxxxxxs {
+    font-size: 0.0625rem;
+  }
+
+  .text-xxxxxxxxs {
+    font-size: 0.03125rem;
+  }
+
+  .text-xxxxxxxxxs {
+    font-size: 0.015625rem;
+  }
+
+  .text-xxxxxxxxxxs {
+    font-size: 0.0078125rem;
+  }
+
+  .text-xxxxxxxxxxxs {
+    font-size: 0.00390625rem;
+  }
+
+  .text-xxxxxxxxxxxxs {
+    font-size: 0.001953125rem;
+  }
+
+  .text-xxxxxxxxxxxxxs {
+    font-size: 0.0009765625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxs {
+    font-size: 0.00048828125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxs {
+    font-size: 0.000244140625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxs {
+    font-size: 0.0001220703125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxs {
+    font-size: 0.00006103515625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000030517578125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000152587890625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000762939453125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000003814697265625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000019073486328125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000095367431640625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000476837158203125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000002384185791015625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000011920928955078125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000059604644775390625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000298023223876953125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000001490116119384765625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000007450580596923828125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000037252902984619140625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000186264514923095703125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000931322574615478515625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000004656612873077392578125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000023283064365386962890625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000116415321826934814453125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000582076609134674072265625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000002910383045673370361328125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000014551915228366851806640625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000072759576141834259033203125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000363797880709171295166015625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000001818989403545856475830078125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000009094947017729282379150390625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000045474735088646411895751953125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000227373675443232059478759765625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000001136868377216160297393798828125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000005684341886080801486968994140625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000028421709430404007434844970703125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000142108547152020037174224853515625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000710542735760100185871124267578125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000003552713678800500929355621337890625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000017763568394002504646778106689453125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000088817841970012523233890533447265625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000000444089209850062616169452667236328125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000002220446049250313080847263336181640625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000011102230246251565404236316680908203125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000000055511151231257827021181583404541015625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000000277555756156289135105907917022705078125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000001387778780781445675529539585113525390625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000000006938893903907228377647697925567626953125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000000034694469519536141888238489627838134765625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000000173472347597680709441192448139190673828125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000000000867361737988403547205962240695953369140625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000000004336808689942017736029811203479766845703125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000000021684043449710088680149056017398834228515625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000000000108420217248550443400745280086994171142578125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000000000542101086242752217003726400434970855712890625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000000002710505431213761085018632002174854278564453125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000000000013552527156068805425093160010874271392822265625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000000000067762635780344027125465800054371356964111328125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000000000338813178901720135627329000271856784820556640625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000000000001694065894508600678136645001359283924102783203125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000000000008470329472543003390683225006796419620513916015625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000000000042351647362715016953416125033982098102569580078125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000000000000211758236813575084767080625169910490512847900390625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000000000001058791184067875423835403125849552452564239501953125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000000000005293955920339377119177015629247762262821197509765625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000000000000026469779601696885595885078146238811314105987548828125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000000000000132348898008484427979425390731194056570529937744140625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000000000000661744490042422139897126953655970282852649688720703125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000000000000003308722450212110699485634768279851414263248443603515625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000000000000016543612251060553497428173841399257071316242218017578125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000000000000082718061255302767487140869206996285356581211090087890625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000000000000000000000413590306276513837435704346034981426782906055450439453125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.0000000000000000000000002067951531382569187178521730174907133914530277252197265625rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.00000000000000000000000010339757656912845935892608650874535669572651386260986328125rem;
+  }
+
+  .text-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs {
+    font-size: 0.000000
