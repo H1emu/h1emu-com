@@ -1,5 +1,5 @@
 <div class="relative">
-  <img class="h-[520px] w-full object-cover" src="./bg1.jpg" />
+  <img class="h-[520px] w-full object-cover" src="./assets/bg1.jpg" />
   <div class="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
 
   <!-- Centering content and stacking text and button vertically -->
