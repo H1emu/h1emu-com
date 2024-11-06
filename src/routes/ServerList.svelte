@@ -4,9 +4,11 @@
   let communityServers: any[] = [];
   let totalPlayers = 0;
   let totalServers = 0;
+  const protocol = window.location.protocol === "https:" ? "https" : "http";
+  const serverListUrl = `${protocol}://loginserver.h1emu.com/servers`;
   async function updateServersData() {
     try {
-      let req = await axios.get("http://loginserver.h1emu.com/servers");
+      let req = await axios.get(serverListUrl);
       const serverData: any[] = req.data.filter((e: any) => !e.isDisabled);
       totalServers = serverData.length;
       totalPlayers = 0;
