@@ -42,7 +42,7 @@
             <!--   </Link> -->
             <!-- </li> -->
             <li class="border-none inline-block align-middle">
-              <a href="http://charts.h1emu.com">
+              <a href="https://chartscf.h1emu.com">
                 <span>Charts</span>
               </a>
             </li>
