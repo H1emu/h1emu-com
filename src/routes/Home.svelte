@@ -55,7 +55,8 @@
         your pioneering efforts.
       </li>
       <li class="text-gray-400">
-        <strong>Kentin:</strong> I don't know what to tell about myself.
+        <strong>Kentin:</strong> I don't know what to tell about myself. Try clicking
+        the H1emu logo multiple times just to see something.
       </li>
       <li class="text-gray-400">
         <strong>Jason:</strong> You're a cool dude like really nice and cool and
