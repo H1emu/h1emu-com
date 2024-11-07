@@ -87,6 +87,26 @@
   </div>
 </div>
 
+<div class="testimonials-section bg-gray-800 py-8">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-white text-center mb-6">What Our Users Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="testimonial bg-white p-6 rounded-lg shadow-md">
+        <p class="text-gray-800">"H1EMU has brought back so many memories. The community is amazing!"</p>
+        <p class="text-gray-600 mt-2">- User A</p>
+      </div>
+      <div class="testimonial bg-white p-6 rounded-lg shadow-md">
+        <p class="text-gray-800">"I never thought I'd play H1Z1 again. Thank you, H1EMU!"</p>
+        <p class="text-gray-600 mt-2">- User B</p>
+      </div>
+      <div class="testimonial bg-white p-6 rounded-lg shadow-md">
+        <p class="text-gray-800">"The dedication of the team is truly inspiring. Keep up the great work!"</p>
+        <p class="text-gray-600 mt-2">- User C</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <style>
   @media (max-width: 600px) {
     .relative {

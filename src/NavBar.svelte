@@ -5,14 +5,18 @@
   import ServerList from "./routes/ServerList.svelte";
   import HowToPlay from "./routes/HowToPlay.svelte";
   let isMenuOpen = false;
+  let isDropdownOpen = false;
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
+  }
+  function toggleDropdown() {
+    isDropdownOpen = !isDropdownOpen;
   }
 </script>
 
 <Router>
   <nav
-    class="absolute z-[100] nav left-0 right-0 mx-auto px-[15px] w-full md:max-w-[750px] lg:max-w-[970px] xl:max-w-[1170px]"
+    class="absolute z-[100] nav left-0 right-0 mx-auto px-[15px] w-full md:max-w-[750px] lg:max-w-[970px] xl:max-w-[1170px] bg-gray-900 text-white"
   >
     <div class="flex flex-wrap relative">
       <div class="w-full">
@@ -39,11 +43,25 @@
                 <span>Servers</span>
               </Link>
             </li>
-            <!-- <li class="border-none inline-block align-middle"> -->
-            <!--   <Link to="/howtoplay"> -->
-            <!--     <span>How to play</span> -->
-            <!--   </Link> -->
-            <!-- </li> -->
+            <li class="border-none inline-block align-middle relative">
+              <button on:click={toggleDropdown} class="focus:outline-none">
+                <span>Resources</span>
+              </button>
+              {#if isDropdownOpen}
+                <ul class="absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg">
+                  <li class="border-none inline-block align-middle">
+                    <a href="https://github.com/H1emu" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">
+                      Github
+                    </a>
+                  </li>
+                  <li class="border-none inline-block align-middle">
+                    <a href="https://github.com/H1emu/h1emu-com" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">
+                      Website Source Code
+                    </a>
+                  </li>
+                </ul>
+              {/if}
+            </li>
             <li class="border-none inline-block align-middle">
               <a href="https://chartscf.h1emu.com">
                 <span>Charts</span>
@@ -110,11 +128,25 @@
                   <span>Servers</span>
                 </Link>
               </li>
-              <!-- <li class="border-none inline-block align-middle"> -->
-              <!--   <Link to="/howtoplay"> -->
-              <!--     <span>How to play</span> -->
-              <!--   </Link> -->
-              <!-- </li> -->
+              <li class="border-none inline-block align-middle relative">
+                <button on:click={toggleDropdown} class="focus:outline-none">
+                  <span>Resources</span>
+                </button>
+                {#if isDropdownOpen}
+                  <ul class="absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg">
+                    <li class="border-none inline-block align-middle">
+                      <a href="https://github.com/H1emu" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">
+                        Github
+                      </a>
+                    </li>
+                    <li class="border-none inline-block align-middle">
+                      <a href="https://github.com/H1emu/h1emu-com" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">
+                        Website Source Code
+                      </a>
+                    </li>
+                  </ul>
+                {/if}
+              </li>
               <li class="border-none inline-block align-middle">
                 <a href="https://chartscf.h1emu.com">
                   <span>Charts</span>
