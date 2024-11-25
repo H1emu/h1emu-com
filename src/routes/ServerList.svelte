@@ -85,7 +85,8 @@
             >{server.h1emuVersion}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.populationNumber}/{server.maxPopulationNumber}</td
+            >{server.populationNumber}/{server.maxPopulationNumber}
+            {server.queueSize ? "(" + server.queueSize + " in queue)" : ""}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{getStatus(server)}</td
@@ -129,7 +130,8 @@
             >{server.h1emuVersion}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.populationNumber}/{server.maxPopulationNumber}</td
+            >{server.populationNumber}/{server.maxPopulationNumber}
+            {server.queueSize ? "(" + server.queueSize + " in queue)" : ""}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{getStatus(server)}</td
