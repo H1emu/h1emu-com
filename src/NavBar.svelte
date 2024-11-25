@@ -4,6 +4,7 @@
   import Download from "./routes/Download.svelte";
   import ServerList from "./routes/ServerList.svelte";
   import HowToPlay from "./routes/HowToPlay.svelte";
+  import GameError from "./routes/GameError.svelte";
   let isMenuOpen = false;
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
@@ -143,5 +144,6 @@
   <Route path="/serverlist" component={ServerList} />
   <Route path="/download" component={Download} />
   <Route path="/howtoplay" component={HowToPlay} />
+  <Route path="/game-error" component={GameError} />
   <Route path="*" component={Home} />
 </Router>
