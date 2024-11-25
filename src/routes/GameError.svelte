@@ -33,11 +33,5 @@
     p {
       font-size: 0.875rem;
     }
-    ul {
-      padding-left: 1rem;
-    }
-    li {
-      font-size: 0.875rem;
-    }
   }
 </style>
