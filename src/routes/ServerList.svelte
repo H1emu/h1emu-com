@@ -1,10 +1,10 @@
 <script lang="ts">
   import axios from "axios";
   import { onDestroy } from "svelte";
-  let officialServers: any[] = [];
-  let communityServers: any[] = [];
-  let totalPlayers = 0;
-  let totalServers = 0;
+  let officialServers: any[] = $state([]);
+  let communityServers: any[] = $state([]);
+  let totalPlayers = $state(0);
+  let totalServers = $state(0);
   const protocol = window.location.protocol === "https:" ? "https" : "http";
   const serverListUrl = `${protocol}://loginservercf.h1emu.com/servers`;
   async function updateServersData() {
