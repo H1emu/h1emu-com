@@ -5,7 +5,7 @@
   import ServerList from "./routes/ServerList.svelte";
   import HowToPlay from "./routes/HowToPlay.svelte";
   import GameError from "./routes/GameError.svelte";
-  let isMenuOpen = false;
+  let isMenuOpen = $state(false);
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
   }
@@ -72,7 +72,11 @@
           </div>
         </div>
         <div class="menu-list block md:hidden">
-          <button class="text-white focus:outline-none" on:click={toggleMenu}>
+          <button
+            class="text-white focus:outline-none"
+            aria-label="menu"
+            onclick={toggleMenu}
+          >
             <svg
               class="w-6 h-6"
               fill="none"

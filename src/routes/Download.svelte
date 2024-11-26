@@ -38,11 +38,11 @@
     <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
       <div class="col-span-5 hidden md:block">
         <div class="media-image-section text-center">
-          <img
-            class="img-fluid mx-auto"
-            src="/etc.clientlibs/minecraft/clientlibs/main/resources/img/Launcher_Icon.png"
-            alt=""
-          />
+          <!-- <img -->
+          <!--   class="img-fluid mx-auto" -->
+          <!--   src="/etc.clientlibs/minecraft/clientlibs/main/resources/img/Launcher_Icon.png" -->
+          <!--   alt="" -->
+          <!-- /> -->
         </div>
       </div>
       <div class="col-span-7 mx-auto">
