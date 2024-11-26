@@ -72,7 +72,11 @@
           </div>
         </div>
         <div class="menu-list block md:hidden">
-          <button class="text-white focus:outline-none" onclick={toggleMenu}>
+          <button
+            class="text-white focus:outline-none"
+            aria-label="menu"
+            onclick={toggleMenu}
+          >
             <svg
               class="w-6 h-6"
               fill="none"

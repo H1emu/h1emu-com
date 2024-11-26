@@ -13,7 +13,11 @@
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
-        <button onclick={clickedH1emuLogo} class="flex items-center">
+        <button
+          onclick={clickedH1emuLogo}
+          aria-label="logo"
+          class="flex items-center"
+        >
           <span
             class="self-center block h-[49px] w-[129px] bg-[url('/h1emu_logo_white.png')] bg-contain bg-no-repeat bg-center transition-transform duration-200"
           ></span>
