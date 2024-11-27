@@ -34,7 +34,7 @@
     }
   }
   updateServersData();
-  const serverUpdateInterval = setInterval(updateServersData, 5_000);
+  const serverUpdateInterval = setInterval(updateServersData, 2_000);
   onDestroy(() => {
     clearInterval(serverUpdateInterval);
   });
