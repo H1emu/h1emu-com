@@ -1,6 +1,6 @@
 <script lang="ts">
   import axios from "axios";
-  import { onDestroy } from "svelte";
+  import { onDestroy, onMount } from "svelte";
   let officialServers: any[] = $state([]);
   let communityServers: any[] = $state([]);
   let totalPlayers = $state(0);
@@ -33,10 +33,12 @@
       }
     }
   }
-  updateServersData();
-  const serverUpdateInterval = setInterval(updateServersData, 2_000);
-  onDestroy(() => {
-    clearInterval(serverUpdateInterval);
+  onMount(() => {
+    updateServersData();
+    const serverUpdateInterval = setInterval(updateServersData, 2_000);
+    onDestroy(() => {
+      clearInterval(serverUpdateInterval);
+    });
   });
 </script>
 
