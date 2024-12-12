@@ -7,6 +7,42 @@
   let totalServers = $state(0);
   const protocol = window.location.protocol === "https:" ? "https" : "http";
   const serverListUrl = `${protocol}://loginservercf.h1emu.com/servers`;
+  function convertLastWipeToDate(e: any) {
+    // TODO: redo this better i'm just bored rn
+    if (!e.lastWipe) {
+      e.lastWipe = `unknown`;
+      return e;
+    }
+    const now = new Date().getTime() / 1000;
+    const seconds = Math.floor(now - e.lastWipe);
+
+    if (seconds < 60) {
+      e.lastWipe = `${seconds} seconds ago`;
+      return e;
+    }
+
+    const minutes = Math.floor(seconds / 60);
+    if (minutes < 60) {
+      e.lastWipe = `${minutes} minutes ago`;
+      return e;
+    }
+
+    const hours = Math.floor(minutes / 60);
+    if (hours < 24) {
+      e.lastWipe = `${hours} hours ago`;
+      return e;
+    }
+
+    const days = Math.floor(hours / 24);
+    if (days < 30) {
+      e.lastWipe = `${days} days ago`;
+      return e;
+    }
+
+    const months = Math.floor(days / 30);
+    e.lastWipe = `${months} months ago`;
+    return e;
+  }
   async function updateServersData() {
     try {
       let req = await axios.get(serverListUrl);
@@ -17,7 +53,10 @@
         totalPlayers += server.populationNumber;
       });
       officialServers = serverData.filter((e: any) => e.IsOfficial);
+      officialServers.map(convertLastWipeToDate);
+
       communityServers = serverData.filter((e: any) => !e.IsOfficial);
+      communityServers.map(convertLastWipeToDate);
     } catch (e) {
       console.error(e);
     }
@@ -65,6 +104,10 @@
         >
         <th
           class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
+          >Last Wipe</th
+        >
+        <th
+          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
           >H1emu Version</th
         >
         <th
@@ -82,6 +125,9 @@
         <tr class="hover:bg-gray-700 transition duration-200 ease-in-out">
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.name} ({server.region})</td
+          >
+          <td class="px-6 py-4 whitespace-nowrap text-gray-200"
+            >{server.lastWipe}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.h1emuVersion}</td
@@ -110,6 +156,10 @@
         >
         <th
           class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
+          >Last Wipe</th
+        >
+        <th
+          class="px-6 py-4 whitespace-nowrap text-left text-sm font-semibold text-gray-300 uppercase tracking-wider"
           >H1emu Version</th
         >
         <th
@@ -126,7 +176,10 @@
       {#each communityServers as server}
         <tr class="hover:bg-gray-700 transition duration-200 ease-in-out">
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.name} ({server.region})</td
+            >{server.name} ({server.region})
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-gray-200"
+            >{server.lastWipe}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.h1emuVersion}</td
