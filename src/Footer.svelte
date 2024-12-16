@@ -57,11 +57,6 @@
                 class="hover:underline">Discord</a
               >
             </li>
-            <li>
-              <a href="https://x.com/playH1Emu" class="hover:underline"
-                >Twitter/X</a
-              >
-            </li>
           </ul>
         </div>
       </div>
