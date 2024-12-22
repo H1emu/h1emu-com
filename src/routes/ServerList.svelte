@@ -35,7 +35,11 @@
 
     const days = Math.floor(hours / 24);
     if (days < 30) {
-      e.lastWipe = `${days} days ago`;
+      if (days === 1) {
+        e.lastWipe = `${days} day ago`;
+      } else {
+        e.lastWipe = `${days} days ago`;
+      }
       return e;
     }
 
