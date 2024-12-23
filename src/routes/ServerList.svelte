@@ -17,19 +17,31 @@
     const seconds = Math.floor(now - e.lastWipe);
 
     if (seconds < 60) {
-      e.lastWipe = `${seconds} seconds ago`;
+      if (seconds === 1) {
+        e.lastWipe = `${seconds} second ago`;
+      } else {
+        e.lastWipe = `${seconds} seconds ago`;
+      }
       return e;
     }
 
     const minutes = Math.floor(seconds / 60);
     if (minutes < 60) {
-      e.lastWipe = `${minutes} minutes ago`;
+      if (minutes === 1) {
+        e.lastWipe = `${minutes} minute ago`;
+      } else {
+        e.lastWipe = `${minutes} minutes ago`;
+      }
       return e;
     }
 
     const hours = Math.floor(minutes / 60);
     if (hours < 24) {
-      e.lastWipe = `${hours} hours ago`;
+      if (hours === 1) {
+        e.lastWipe = `${hours} hour ago`;
+      } else {
+        e.lastWipe = `${hours} hours ago`;
+      }
       return e;
     }
 
@@ -44,7 +56,11 @@
     }
 
     const months = Math.floor(days / 30);
-    e.lastWipe = `${months} months ago`;
+    if (months === 1) {
+      e.lastWipe = `${months} month ago`;
+    } else {
+      e.lastWipe = `${months} months ago`;
+    }
     return e;
   }
   async function updateServersData() {
