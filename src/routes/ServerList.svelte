@@ -6,7 +6,7 @@
   let totalPlayers = $state(0);
   let totalServers = $state(0);
   const protocol = window.location.protocol === "https:" ? "https" : "http";
-  const serverListUrl = `${protocol}://loginservercf.h1emu.com/servers`;
+  const serverListUrl = `${protocol}://loginserver.h1emu.com/servers`;
   function convertLastWipeToDate(e: any) {
     // TODO: redo this better i'm just bored rn
     if (!e.lastWipe) {
