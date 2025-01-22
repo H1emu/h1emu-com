@@ -26,11 +26,6 @@
               ></Link>
             </li>
             <li class="border-none inline-block align-middle">
-              <Link to="/">
-                <span>Home</span>
-              </Link>
-            </li>
-            <li class="border-none inline-block align-middle">
               <a href="https://github.com/QuentinGruber/h1z1-server/releases">
                 <span>Updates</span>
               </a>
@@ -104,11 +99,6 @@
                   to="/"
                   class="block h-[49px] w-[129px] bg-[url('/h1emu_logo_white.png')] bg-contain bg-no-repeat bg-center transition-transform duration-200"
                 ></Link>
-              </li>
-              <li class="border-none inline-block align-middle">
-                <Link to="/">
-                  <span>Home</span>
-                </Link>
               </li>
               <li class="border-none inline-block align-middle">
                 <a href="https://github.com/QuentinGruber/h1z1-server/releases">
