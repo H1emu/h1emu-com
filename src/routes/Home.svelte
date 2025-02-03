@@ -63,8 +63,16 @@
         nice.
       </li>
       <li class="text-gray-400">
-        Thanks to all those who sent messages of help and support and
-        perpetuated the hope of playing h1z1 again.
+        <strong>Eric:</strong> Thank you for being an outstanding moderator and for
+        organizing such great events.
+      </li>
+      <li class="text-gray-400">
+        A huge thank you to all contributors who are not mentioned here—you are
+        truly appreciated!
+      </li>
+      <li class="text-gray-400">
+        Thank you to everyone who sent messages of support and kept the hope of
+        playing H1Z1 alive.
       </li>
     </ul>
   </div>
