@@ -7,6 +7,7 @@
   let totalServers = $state(0);
   const protocol = window.location.protocol === "https:" ? "https" : "http";
   const serverListUrl = `${protocol}://loginserver.h1emu.com/servers`;
+  let serverUpdateInterval = 0;
   function convertLastWipeToDate(e: any) {
     // TODO: redo this better i'm just bored rn
     if (!e.lastWipe) {
@@ -92,11 +93,27 @@
       }
     }
   }
+  function startUpdateInterval() {
+    serverUpdateInterval = setInterval(updateServersData, 2_000);
+  }
+  function stopUpdateInterval() {
+    clearInterval(serverUpdateInterval);
+  }
+  function handleVisibilityChange() {
+    if (document.hidden) {
+      stopUpdateInterval();
+    } else {
+      startUpdateInterval();
+    }
+  }
+
   onMount(() => {
     updateServersData();
-    const serverUpdateInterval = setInterval(updateServersData, 2_000);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    startUpdateInterval();
     onDestroy(() => {
-      clearInterval(serverUpdateInterval);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      stopUpdateInterval();
     });
   });
 </script>
