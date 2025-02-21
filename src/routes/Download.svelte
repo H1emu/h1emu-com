@@ -22,7 +22,7 @@
     </a>
 
     <a
-      href="https://github.com/H1emu/h1emu-launcher/releases/latest/download/H1EmuLauncherSetup.exe"
+      href="https://github.com/H1emu/h1emu-launcher/releases/latest/download/H1EmuLauncherSetup.msi"
       download
     >
       <button
