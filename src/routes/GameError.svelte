@@ -5,6 +5,16 @@
 
   const error_code = params.get("code");
   const error_info = params.get("info");
+
+  let potential_fix;
+  switch (error_code) {
+    case "G14":
+      potential_fix = "Delete your character and try again.";
+      break;
+    default:
+      potential_fix = null;
+      break;
+  }
 </script>
 
 <div
@@ -19,6 +29,12 @@
     <p class="mb-3 font-normal text-gray-400">
       {error_info}
     </p>
+    {#if potential_fix}
+      <h6 class="mb-2 text-1xl font-bold text-orange-400">
+        Potential fix:
+        {potential_fix}
+      </h6>
+    {/if}
   </div>
 </div>
 
