@@ -9,7 +9,8 @@
   let potential_fix;
   switch (error_code) {
     case "G14":
-      potential_fix = "Delete your character and try again.";
+      potential_fix =
+        "Delete your character and create a new one with a different name.";
       break;
     default:
       potential_fix = null;
