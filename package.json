@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "http-server dist -p 3000 -c-1 --push-state",
+    "start": "http-server build -p 3000 -c-1 --push-state dist/",
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
   },
   "devDependencies": {
