@@ -77,6 +77,8 @@
       officialServers.map(convertLastWipeToDate);
 
       communityServers = serverData.filter((e: any) => !e.IsOfficial);
+      // Sort community servers by populationNumber in descending order
+      communityServers.sort((a, b) => b.populationNumber - a.populationNumber);
       communityServers.map(convertLastWipeToDate);
     } catch (e) {
       console.error(e);
