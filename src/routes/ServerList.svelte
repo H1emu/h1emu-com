@@ -163,7 +163,8 @@
       {#each officialServers as server}
         <tr class="hover:bg-gray-700 transition duration-200 ease-in-out">
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.name} ({server.region})</td
+            ><strong>{server.name} ({server.region})</strong><br />
+            <i>{server.description}</i></td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.lastWipe}</td
@@ -215,8 +216,9 @@
       {#each communityServers as server}
         <tr class="hover:bg-gray-700 transition duration-200 ease-in-out">
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.name} ({server.region})
-          </td>
+            ><strong>{server.name} ({server.region})</strong><br />
+            <i>{server.description}</i></td
+          >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
             >{server.lastWipe}</td
           >
