@@ -98,6 +98,9 @@
                 <Link
                   to="/"
                   class="block h-[49px] w-[129px] bg-[url('/h1emu_logo_white.png')] bg-contain bg-no-repeat bg-center transition-transform duration-200"
+                  onclick={() => {
+                    toggleMenu();
+                  }}
                 ></Link>
               </li>
               <li class="border-none inline-block align-middle">
@@ -106,7 +109,12 @@
                 </a>
               </li>
               <li class="border-none inline-block align-middle">
-                <Link to="/serverlist">
+                <Link
+                  to="/serverlist"
+                  onclick={() => {
+                    toggleMenu();
+                  }}
+                >
                   <span>Servers</span>
                 </Link>
               </li>
@@ -131,7 +139,12 @@
                 </a>
               </li>
               <li class="border-none inline-block align-middle">
-                <Link to="/download">
+                <Link
+                  to="/download"
+                  onclick={() => {
+                    toggleMenu();
+                  }}
+                >
                   <div
                     class="bg-[#d6131a] text-white text-2xl px-4 py-2 transition-colors duration-300 ease-in-out hover:bg-white hover:text-[#d6131a]"
                   >
