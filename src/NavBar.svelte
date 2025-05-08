@@ -51,6 +51,11 @@
               </a>
             </li>
             <li class="border-none inline-block align-middle">
+              <a href="http://roadmap.h1emu.com">
+                <span>Roadmap</span>
+              </a>
+            </li>
+            <li class="border-none inline-block align-middle">
               <a href="https://www.patreon.com/h1emu">
                 <span>Support us</span>
               </a>
@@ -131,6 +136,11 @@
               <li class="border-none inline-block align-middle">
                 <a href="https://wiki.h1emu.com">
                   <span>Wiki</span>
+                </a>
+              </li>
+              <li class="border-none inline-block align-middle">
+                <a href="http://roadmap.h1emu.com">
+                  <span>Roadmap</span>
                 </a>
               </li>
               <li class="border-none inline-block align-middle">

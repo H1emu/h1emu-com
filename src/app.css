@@ -55,10 +55,10 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .nav ul.home-nav li a {
     font-size: 20px;
-    padding: 0 18px;
+    padding: 0 10px;
   }
 }
 
