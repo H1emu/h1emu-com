@@ -47,8 +47,7 @@
         contributed to the technical foundation.
       </li>
       <li class="text-gray-400">
-        <strong>Chriis:</strong> As the first to attempt server emulation for H1Z1,
-        you laid the groundwork for everything we've built.
+        <strong>Chriis:</strong> As the first to attempt server emulation for H1Z1.
       </li>
       <li class="text-gray-400">
         <strong>Jacob Seidelin:</strong> None of this would have been possible without
