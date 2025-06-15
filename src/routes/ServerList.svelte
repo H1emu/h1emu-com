@@ -10,8 +10,8 @@
   let serverUpdateInterval = 0;
 
   function getPopulation(server: any) {
-    if (server.id !== 11 || server.id !== 12) {
-      return server.populationNumber / server.maxPopulationNumber;
+    if (server.serverId !== 11 && server.serverId !== 12) {
+      return `${server.populationNumber} / ${server.maxPopulationNumber}`;
     } else {
       switch (server.populationLevel) {
         case 0:
