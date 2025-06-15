@@ -8,6 +8,23 @@
   const protocol = window.location.protocol === "https:" ? "https" : "http";
   const serverListUrl = `${protocol}://loginserver.h1emu.com/servers`;
   let serverUpdateInterval = 0;
+
+  function getPopulation(server: any) {
+    if (server.id !== 11 || server.id !== 12) {
+      return server.populationNumber / server.maxPopulationNumber;
+    } else {
+      switch (server.populationLevel) {
+        case 0:
+          return "LOW";
+        case 1:
+          return "MEDIUM";
+        case 2:
+          return "HIGH";
+        case 3:
+          return "FULL";
+      }
+    }
+  }
   function convertLastWipeToDate(e: any) {
     // TODO: redo this better i'm just bored rn
     if (!e.lastWipe) {
@@ -173,7 +190,7 @@
             >{server.h1emuVersion}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.populationNumber}/{server.maxPopulationNumber}
+            >{getPopulation(server)}
             {server.queueSize ? "(" + server.queueSize + " in queue)" : ""}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
