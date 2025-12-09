@@ -10,20 +10,17 @@
   let serverUpdateInterval = 0;
 
   function getPopulation(server: any) {
-    if (server.serverId !== 11 && server.serverId !== 12) {
-      return `${server.populationNumber} / ${server.maxPopulationNumber}`;
-    } else {
-      switch (server.populationLevel) {
-        case 0:
-          return "LOW";
-        case 1:
-          return "MEDIUM";
-        case 2:
-          return "HIGH";
-        case 3:
-          return "FULL";
-      }
-    }
+    return `${server.populationNumber} / ${server.maxPopulationNumber}`;
+    // switch (server.populationLevel) {
+    //   case 0:
+    //     return "LOW";
+    //   case 1:
+    //     return "MEDIUM";
+    //   case 2:
+    //     return "HIGH";
+    //   case 3:
+    //     return "FULL";
+    // }
   }
   function convertLastWipeToDate(e: any) {
     // TODO: redo this better i'm just bored rn
