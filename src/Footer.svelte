@@ -64,7 +64,7 @@
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
       <span class="text-sm text-gray-500 dark:text-gray-400"
-        >© 2025 <a class="hover:underline" href="/">H1EMU</a>. All Rights
+        >© 2026 <a class="hover:underline" href="/">H1EMU</a>. All Rights
         Reserved. H1Emu is not affiliated with H1Z1.com, H1Z1: Just Survive or
         Daybreak Game Company LLC, H1Z1 and the H1Z1 logo are trademarks of the
         Daybreak Game Company LLC</span
