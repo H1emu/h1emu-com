@@ -10,17 +10,10 @@
   let serverUpdateInterval = 0;
 
   function getPopulation(server: any) {
+    if (server.populationNumber == null || server.maxPopulationNumber == null) {
+      return server.populationText ?? "";
+    }
     return `${server.populationNumber} / ${server.maxPopulationNumber}`;
-    // switch (server.populationLevel) {
-    //   case 0:
-    //     return "LOW";
-    //   case 1:
-    //     return "MEDIUM";
-    //   case 2:
-    //     return "HIGH";
-    //   case 3:
-    //     return "FULL";
-    // }
   }
   function convertLastWipeToDate(e: any) {
     // TODO: redo this better i'm just bored rn
@@ -85,7 +78,7 @@
       totalServers = serverData.length;
       totalPlayers = 0;
       serverData.forEach((server) => {
-        totalPlayers += server.populationNumber;
+        totalPlayers += server.populationNumber ?? 0;
       });
       officialServers = serverData.filter((e: any) => e.IsOfficial);
       officialServers.map(convertLastWipeToDate);
@@ -240,7 +233,7 @@
             >{server.h1emuVersion}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
-            >{server.populationNumber}/{server.maxPopulationNumber}
+            >{getPopulation(server)}
             {server.queueSize ? "(" + server.queueSize + " in queue)" : ""}</td
           >
           <td class="px-6 py-4 whitespace-nowrap text-gray-200"
